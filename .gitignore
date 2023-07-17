@@ -1,2 +1,6 @@
 .env
 weather_project/utils/config.ini
+services/airflow/dags/__pycache__/
+services/airflow/logs/
+weather_project/__pycache__/
+weather_project/utils/__pycache__/
