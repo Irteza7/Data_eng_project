@@ -64,7 +64,6 @@ services:
       - ./services/airflow/dags:/opt/airflow/dags
       - ./services/airflow/logs:/opt/airflow/logs
       - ./services/airflow/plugins:/opt/airflow/plugins
-      - ./weather_project:/opt/airflow/weather_project
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       - postgres
@@ -84,7 +83,6 @@ services:
       - ./services/airflow/dags:/opt/airflow/dags
       - ./services/airflow/logs:/opt/airflow/logs
       - ./services/airflow/plugins:/opt/airflow/plugins
-      - ./weather_project:/opt/airflow/weather_project
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       - postgres
@@ -109,7 +107,6 @@ services:
       - ./services/airflow/dags:/opt/airflow/dags
       - ./services/airflow/logs:/opt/airflow/logs
       - ./services/airflow/plugins:/opt/airflow/plugins
-      - ./weather_project:/opt/airflow/weather_project
       - /var/run/docker.sock:/var/run/docker.sock
     container_name: airflow-init
     entrypoint: /bin/bash
