@@ -1,4 +1,5 @@
 # Data_eng_project
-Completely dockerized etl. tools: kafka, postgres, airflow
+Completely dockerized weather update ETL.
+Tools used: kafka, postgres, airflow
 
 will write description later
