@@ -7,7 +7,7 @@ The services used in this project are containerized using Docker and orchestrate
 ## Project Structure
 
 The project is structured as follows:
-
+```
 .
 ├── docker-compose.yml
 ├── Dockerfile
@@ -25,7 +25,7 @@ The project is structured as follows:
 │ ├── postgres.py
 │ ├── settings.py
 │ └── util.py
-
+```
 
 - The `docker-compose.yml` file defines the services that make up the app.
 - The `Dockerfile` is used to build the Airflow service.
