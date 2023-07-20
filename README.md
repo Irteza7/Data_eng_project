@@ -4,6 +4,12 @@ This project is a data pipeline that fetches weather data, publishes it to a Kaf
 
 The services used in this project are containerized using Docker and orchestrated using Docker Compose.
 
+
+## Documentation
+
+For a detailed description of the project, please refer to the [PROJECT REPORT](REPORT.md).
+
+
 ## Project Structure
 
 The project is structured as follows:
@@ -74,8 +80,4 @@ After setting up the services, you can start the pipeline by triggering the Airf
 ## Troubleshooting
 
 If you face any issues while setting up or running the project, please check the service logs using the `docker logs <service_name>` command.
-
-## Documentation
-
-For a detailed description of the project, please refer to the [PROJECT REPORT](REPORT.md).
 
