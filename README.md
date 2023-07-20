@@ -40,11 +40,32 @@ The project is structured as follows:
 
 ## Setup
 
-1. Clone the repository.
-2. Create a `.env` file in the project root and set the necessary environment variables. Refer to `.env.example` for the required variables.
-3. Run `docker-compose up -d --build`.
+To set up the project, follow these steps:
 
-The services should now be up and running. You can access the Airflow webserver at `http://localhost:8080` and Metabase at `http://localhost:3000`.
+1. Ensure Docker and Docker Compose are installed on your machine.
+
+2. Clone the repository and navigate to the project directory.
+
+3. Build the weather project package:
+
+    ```bash
+    cd weather_project
+    python setup.py bdist_wheel
+    cd ..
+    ```
+
+4. Create a `.env` file in the project directory and fill it with your own values. You can use `.env.example` as a template.
+
+5. Create a `config.ini` file in the `utils` directory and fill it with your own values. You can use `config.ini.example` as a template.
+
+6. Run the following command to start the services:
+
+    ```bash
+    docker-compose up -d --build
+    ```
+
+After following these steps, you should be able to access the Airflow webserver at `localhost:8080` and Metabase at `localhost:3000`.
+
 
 ## Running the Pipeline
 
