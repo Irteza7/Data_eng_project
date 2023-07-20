@@ -7,3 +7,4 @@ weather_project/utils/__pycache__/
 weather_project/build
 weather_project/weather_project.egg-info
 weather_project/w_venv
+weather_project/dist
