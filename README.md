@@ -12,19 +12,19 @@ The project is structured as follows:
 ├── docker-compose.yml
 ├── Dockerfile
 ├── services
-│ ├── airflow
-│ │ ├── dags
-│ │ │ └── weather_dag.py
+│ └── airflow
+│  └── dags
+│   └── weather_dag.py
 └── weather_project
 ├── consume_n_store.py
 ├── fetch_n_publish.py
-├── utils
-│ ├── api_call.py
-│ ├── config.ini
-│ ├── kafka_init.py
-│ ├── postgres.py
-│ ├── settings.py
-│ └── util.py
+└── utils
+ ├── api_call.py
+ ├── config.ini
+ ├── kafka_init.py
+ ├── postgres.py
+ ├── settings.py
+ └── util.py
 ```
 
 - The `docker-compose.yml` file defines the services that make up the app.
