@@ -1,23 +1,14 @@
 import os
-import configparser
 
 def get_settings():
-    """Load settings from the configuration file."""
-    current_directory = os.path.dirname(os.path.realpath(__file__))
-    config_path = os.path.join(current_directory, 'config.ini')
-    print(f"Config file path: {config_path}")
-#    print(f"Current working directory: {os.getcwd()}")
-    config = configparser.ConfigParser()
-    config.read(config_path)
-    
-    api_key = config.get('API', 'key')
-    cities = config.get('API', 'cities').split(',')
-
-    postgres_user = config.get('Postgres', 'POSTGRES_USER')
-    postgres_password = config.get('Postgres','POSTGRES_PASSWORD')
-    database_name = config.get('Postgres', 'DATABASE_NAME')
-    host = config.get('Postgres', 'HOST')
-    port = config.get('Postgres', 'PORT')
+    """Load settings from environment variables."""
+    api_key = os.getenv('API_KEY')
+    cities = os.getenv('CITIES').split(',')
+    postgres_user = os.getenv('POSTGRES_USER')
+    postgres_password = os.getenv('POSTGRES_PASSWORD')
+    database_name = os.getenv('DATABASE_NAME')
+    host = os.getenv('HOST')
+    port = os.getenv('PORT')
 
     # Build the Postgres parameters dictionary
     postgres_params = {
@@ -33,6 +24,8 @@ def get_settings():
         "cities": cities,
         "postgres": postgres_params
     }
+
+
 
 if __name__ == "__main__":
     settings = get_settings()

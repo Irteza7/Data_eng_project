@@ -13,6 +13,6 @@ COPY ./weather_project /weather_project
 
 # Install the Python package defined in 'setup.py'
 RUN pip install --upgrade --user pip
-RUN pip install --no-cache-dir --user /weather_project/dist/weather_project-0.1-py3-none-any.whl
+RUN pip install --no-cache-dir --user /weather_project/dist/weather_project-0.2-py3-none-any.whl
 
 
