@@ -62,9 +62,7 @@ To set up the project, follow these steps:
 
 4. Create a `.env` file in the project directory and fill it with your own values. You can use `.env.example` as a template.
 
-5. Create a `config.ini` file in the `utils` directory and fill it with your own values. You can use `config.ini.example` as a template.
-
-6. Run the following command to start the services:
+5. Run the following command to start the services:
 
     ```bash
     docker-compose up -d --build
